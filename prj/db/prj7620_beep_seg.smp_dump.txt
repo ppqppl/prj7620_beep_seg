@@ -1,0 +1,23 @@
+
+State Machine - |prj7620_beep_seg|sel_drive:inst_sel_drive|current_state
+Name current_state.state5 current_state.state4 current_state.state3 current_state.state2 current_state.state1 current_state.state0 
+current_state.state0 0 0 0 0 0 0 
+current_state.state1 0 0 0 0 1 1 
+current_state.state2 0 0 0 1 0 1 
+current_state.state3 0 0 1 0 0 1 
+current_state.state4 0 1 0 0 0 1 
+current_state.state5 1 0 0 0 0 1 
+
+State Machine - |prj7620_beep_seg|paj7620_top:paj7620_top_inst|i2c_ctrl:i2c_ctrl_inst|c_state
+Name c_state.NACK c_state.WAIT c_state.STOP c_state.ACK_3 c_state.DATA c_state.ACK_2 c_state.DEVICE_ADDR c_state.ACK_1 c_state.SLAVE_ADDR c_state.START c_state.IDLE 
+c_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 
+c_state.START 0 0 0 0 0 0 0 0 0 1 1 
+c_state.SLAVE_ADDR 0 0 0 0 0 0 0 0 1 0 1 
+c_state.ACK_1 0 0 0 0 0 0 0 1 0 0 1 
+c_state.DEVICE_ADDR 0 0 0 0 0 0 1 0 0 0 1 
+c_state.ACK_2 0 0 0 0 0 1 0 0 0 0 1 
+c_state.DATA 0 0 0 0 1 0 0 0 0 0 1 
+c_state.ACK_3 0 0 0 1 0 0 0 0 0 0 1 
+c_state.STOP 0 0 1 0 0 0 0 0 0 0 1 
+c_state.WAIT 0 1 0 0 0 0 0 0 0 0 1 
+c_state.NACK 1 0 0 0 0 0 0 0 0 0 1 
